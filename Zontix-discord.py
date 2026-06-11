@@ -124,7 +124,7 @@ async def setup_roles(ctx):
 @commands.has_permissions(administrator=True)
 async def rules(ctx):
     embed = discord.Embed(
-        title="🌟 Server Rules & Code of Conduct",
+        title="Server Rules & Code of Conduct",
         description="## 1. Respect the Circle\n"
                     "• **Honor All Nations:** Discrimination, hate speech, or disrespect regarding tribal affiliations, race, gender, or identity will result in an immediate ban.\n"
                     "• **Keep It Friendly:** No toxicity, personal attacks, or targeted harassment.\n"
@@ -143,10 +143,7 @@ async def rules(ctx):
                     "## 4. Safety & Privacy\n"
                     "• **Protect Identity:** Do not share anyone's real-life personal information (doxxing).\n"
                     "• **Report Issues:** Use the reporting channel or DM a moderator if you witness toxic behavior or rule-breaking.\n\n"
-                    "---\n\n"
-                    "## ✅ Acknowledgment\n"
-                    "*React with ✅ to confirm you have read and understand the rules.*\n\n"
-                    "**Violations may result in:** Warning → Mute → Kick → Ban",
+                    "---\n\n",
         color=discord.Color.blue()  # 0x3498db
     )
     embed.set_footer(text="Last Updated: June 2026")
