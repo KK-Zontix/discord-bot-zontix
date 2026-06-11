@@ -9,10 +9,18 @@ MESSAGE_ID = 123456789012345678  # The message users react to
 
 # Mapping: emoji -> role_name (or role_id)
 ROLE_MAPPING = {
-    "🍎": "Apple Lover",
-    "🍕": "Pizza Fan",
-    "🎮": "Gamer",
-    "📚": "Reader"
+    "": "CCCC-Wolves",
+    "": "CMN-Ravens",
+    "": "FPCC-buffalo-chasers",
+    "": "HINU",
+    "": "OLC-bravehearts",
+    "": "RLNC-Migizi",
+    "": "SBC-Suns",
+    "": "SCC-BearPaws",
+    "": "TOCC-Jegos",
+    "": "TMC-Mikinocks",
+    "": "Supporters"
+
 }
 # =========================
 
@@ -110,5 +118,41 @@ async def setup_roles(ctx):
     await ctx.send(f"✅ Reaction role message created! Message ID: `{msg.id}`")
     print(f"📝 Save this MESSAGE_ID: {msg.id}")
 
+
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def rules(ctx):
+    embed = discord.Embed(
+        title="🌟 Server Rules & Code of Conduct",
+        description="## 1. Respect the Circle\n"
+                    "• **Honor All Nations:** Discrimination, hate speech, or disrespect regarding tribal affiliations, race, gender, or identity will result in an immediate ban.\n"
+                    "• **Keep It Friendly:** No toxicity, personal attacks, or targeted harassment.\n"
+                    "• **Respect the Admins:** Follow directions given by server moderators and tournament organizers.\n\n"
+                    "---\n\n"
+                    "## 2. Competitive Integrity\n"
+                    "• **Play Fair:** Cheating, hacking, smurfing, or exploiting bugs in competitive matches is strictly forbidden.\n"
+                    "• **Good Sportsmanship:** Win with humility; lose with grace. No excessive trash-talking, toxic behavior, or 'GG EZ' spamming.\n"
+                    "• **Represent Well:** Remember that you are representing your specific Tribal College or University (TCU) when you play.\n\n"
+                    "---\n\n"
+                    "## 3. Content & Chat Guidelines\n"
+                    "• **Keep it Clean:** This is a school-affiliated space; keep main text and voice channels PG-13/SFW (Safe For Work).\n"
+                    "• **No Spamming:** Avoid flooding chat with walls of text, excessive emojis, or irrelevant links.\n"
+                    "• **No Self-Promo:** Do not advertise external streams, servers, or products without moderator approval.\n\n"
+                    "---\n\n"
+                    "## 4. Safety & Privacy\n"
+                    "• **Protect Identity:** Do not share anyone's real-life personal information (doxxing).\n"
+                    "• **Report Issues:** Use the reporting channel or DM a moderator if you witness toxic behavior or rule-breaking.\n\n"
+                    "---\n\n"
+                    "## ✅ Acknowledgment\n"
+                    "*React with ✅ to confirm you have read and understand the rules.*\n\n"
+                    "**Violations may result in:** Warning → Mute → Kick → Ban",
+        color=discord.Color.blue()  # 0x3498db
+    )
+    embed.set_footer(text="Last Updated: June 2026")
+    
+    await ctx.send(embed=embed)
+
 if __name__ == "__main__":
     bot.run(TOKEN)
+
