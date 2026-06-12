@@ -9,18 +9,17 @@ MESSAGE_ID = 123456789012345678  # The message users react to
 
 # Mapping: emoji -> role_name (or role_id)
 ROLE_MAPPING = {
-    "": "CCCC-Wolves",
-    "": "CMN-Ravens",
-    "": "FPCC-buffalo-chasers",
-    "": "HINU",
-    "": "OLC-bravehearts",
-    "": "RLNC-Migizi",
-    "": "SBC-Suns",
-    "": "SCC-BearPaws",
-    "": "TOCC-Jegos",
-    "": "TMC-Mikinocks",
-    "": "Supporters"
-
+    "<:CCCC_Wolves_:1514794816029065436>": "CCCC-Wolves",
+    "<:CMN_Ravens:1514794872119234581>": "CMN-Ravens",
+    "<:FPCC_buffalo_chasers:1514794986284257490>": "FPCC-buffalo-chasers",
+    "<:HINU:1514795056463089665>": "HINU",
+    "<:OLC_bravehearts:1514795124213678131>": "OLC-bravehearts",
+    "<:RLNC_Migizi:1514795178295169104>": "RLNC-Migizi",
+    "<:SBC_Suns:1514795283236782230>": "SBC-Suns",
+    "<:SCC_BearPaws:1514795355185741984>": "SCC-BearPaws",
+    "<:TOCC_Jegos:1514795474983456910>": "TOCC-Jegos",
+    "<:TMC_Mikinocks:1514795425679540354>": "TMC-Mikinocks",
+    "🤝": "Supporters"
 }
 # =========================
 
