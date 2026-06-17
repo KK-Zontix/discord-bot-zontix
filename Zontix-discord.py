@@ -6,15 +6,13 @@ from discord.ext import task
 ##############################################
 #                 GLOBALS                    #
 ##############################################
-TOKEN = "MTUxNDQ5NTgzMzY5NjExMjc3Mg.GIE0Ru.LtsbVlHPLIaw2tdSKleRIt4O-Qg5z9_Sf3qvDE"
 GUILD_ID = 1486585771321331712  # sever id
 ROLES_CHANNEL_ID = 1514488833155010690  # channel for message
 MESSAGE_ID = 1514918272422641685  # The message 
 RULES_CHANNEL_ID = 1514488403301765166 
 
 STREAMING_CHANNEL_ID = 1514785830260965386
-TWITCH_APP_ID = 'e7m4m6vn7cflw2ls4d0lcy9m6iz14j'
-TWITCH_APP_SECRET = '8gnta5np57amaqsk9bo9q472znoc6i'
+
 STREAMERS = []
 
 # Mapping: emoji -> role_name (or role_id)
