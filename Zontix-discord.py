@@ -3,11 +3,9 @@ from discord.ext import commands
 from twitchAPI.twitch import Twitch 
 from discord.ext import task 
 
-##############################################
-#                 GLOBALS                    #
-##############################################
-#
 
+
+#################################
 STREAMERS = []
 
 # Mapping: emoji -> role_name (or role_id)
