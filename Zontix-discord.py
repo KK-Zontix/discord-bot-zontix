@@ -1,7 +1,28 @@
 import discord
+import json
 from discord.ext import commands
 from twitchAPI.twitch import Twitch 
 from discord.ext import task 
+
+# get secrets
+s = []
+TOKEN = ""
+TWITCH_APP_SECRET = ""
+GUILD_ID = None
+ROLES_CHANNEL_ID = None 
+MESSAGE_ID = None
+RULES_CHANNEL_ID = None
+STREAMING_CHANNEL_ID = None
+
+with open('/Resources/secrets.json', 'r') as f:
+    s = json.load(f)
+    TOKEN = s["TOKEN"]
+    TWITCH_APP_SECRET = s["TWITCH_APP_SECRET"]
+    GUILD_ID = s["GUILD_ID"]
+    ROLES_CHANNEL_ID = s["ROLES_CHANNEL_ID"]
+    MESSAGE_ID = s["MESSAGE_ID"]
+    RULES_CHANNEL_ID = s["TOKEN"]
+    STREAMING_CHANNEL_ID = s["TOKEN"]
 
 
 
@@ -135,7 +156,6 @@ async def setup_roles(ctx):
     if failed_emojis:
         await ctx.send(f"⚠️ Could not add {len(failed_emojis)} emoji(s). Check emoji formats.")
     
-    await ctx.send(f"✅ Reaction role message created! Message ID: `{msg.id}`")
     print(f"📝 Save this MESSAGE_ID: {msg.id}")
     
     # Update the global MESSAGE_ID
