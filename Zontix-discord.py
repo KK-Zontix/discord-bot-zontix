@@ -6,12 +6,7 @@ from discord.ext import task
 ##############################################
 #                 GLOBALS                    #
 ##############################################
-GUILD_ID = 1486585771321331712  # sever id
-ROLES_CHANNEL_ID = 1514488833155010690  # channel for message
-MESSAGE_ID = 1514918272422641685  # The message 
-RULES_CHANNEL_ID = 1514488403301765166 
 
-STREAMING_CHANNEL_ID = 1514785830260965386
 
 STREAMERS = []
 
